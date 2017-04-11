@@ -31,9 +31,10 @@ The UML for this system is provided in Figure 1 (see PDF), and a set of Java Doc
 
 
 ## Deliverables
-* Completed input domain analysis table.
+* Completed input domain analysis table in a file called analysis.md.  Include both partners emails.
 * Completed unit tests for BillboardManager.java
 
 ## Grading
 * Quality of analysis
 * Quality of tests
+* Quality of instruction following
