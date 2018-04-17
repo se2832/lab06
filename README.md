@@ -11,12 +11,12 @@ The UML for this system is provided in Figure 1 (see PDF), and a set of Java Doc
 
 
 ## 3.  IDM Analysis Template
-| Method Name | Parameters | Return Types | Possible Values | Exceptions | Partition |
-| --- | --- | --- | --- | --- | --- |
-| constructor | width | An instance of the class. | Not null |   | P1 |
-|   |   |   | Null | IllegalArgumentException | P2 |
-| setWidth | Width, current width | None |   | Illegal Argument Exception | P3 |
-|   |   | None |   |   | P4 |
+|Test No. | Method Name | Parameters | Return Types | Possible Values | Exceptions | Partition |
+| --- | --- | --- | --- | --- | --- | --- |
+| IDM-01 | constructor | width | An instance of the class. | Not null |   | P1 |
+| IDM-02 |   |   |   | Null | IllegalArgumentException | P2 |
+| IDM-03 | setWidth | Width, current width | None |   | Illegal Argument Exception | P3 |
+| IDM-04 |   |   | None |   |   | P4 |
 | |   |   |   |   |   |
 |   |   |   |   |   |   |
 |   |   |   |   |   |   |
@@ -32,21 +32,24 @@ The UML for this system is provided in Figure 1 (see PDF), and a set of Java Doc
 |   |   |
 
 ## 4. Basis Path Analysis
-| Method Name | MCC | Test Case Values | Expected Result | 
-| --- | --- | --- | --- |
-| constructor | 2 | width = 0 | IllegalArgumentException | 
-|  |  | width = 10 | getWidth() = 10 | 
+|Test No. | Method Name | MCC | Test Case Values | Expected Result | 
+| --- | --- | --- | --- | --- |
+| BA-01 | constructor | 2 | width = 0 | IllegalArgumentException | 
+| BA-02 |  |  | width = 10 | getWidth() = 10 | 
 
 
 ## Deliverables
+A Pull Request featuring an immediately made branch from the seed repo.
+The branch should contain:
 A single file named Writeup.md that includes:
 * Completed input domain analysis table in a file called Writeup.md. 
 * Completed basis path calculations
 * Two embedded images of control flow graphs.  These should be for the methods ```getDisplayedMessage``` and ```scrollLeft```
 
-Completed unit tests for BillboardManager.java
+Completed unit tests for BillboardManager.java.  You may combine IDM and BA tests where appropriate. 
 
 ## Grading
-* Quality of analysis
-* Quality of tests
-* Quality of instruction following
+* Quality of IDM analysis - Were all the partitions identified and tested?
+* Quality of Basis Path analysis - Do the tests written provide Basis Path Coverage?  Are the Control Flow Graphs correct?
+* Quality of tests - Do the tests follow our standards? Are they traceable back to the analysis?
+* Quality of instruction following - Was a branch made immediately?  Are all the files added?  Was a Pull Request made?
