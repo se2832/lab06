@@ -173,13 +173,18 @@ public class BillboardManager implements BillboardManagerInterface {
 
 	}
 
+
+	@Override
+	public int getWidth() {
+		return width;
+	}
+
 	@Override
 	public int getHours() {
 		return hours;
 	}
 
 	@Override
-
 	public int getMinutes() {
 		return minutes;
 	}

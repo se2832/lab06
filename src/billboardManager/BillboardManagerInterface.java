@@ -21,6 +21,14 @@ public interface BillboardManagerInterface {
 	String getDisplayedMessage();
 
 	/**
+	 * This method will return the width variable that has been set within this
+	 * class.
+	 * 
+	 * @return The width will be returned.
+	 */
+	int getWidth();
+
+	/**
 	 * This method will return the hours variable that has been set within this
 	 * class.
 	 * 
